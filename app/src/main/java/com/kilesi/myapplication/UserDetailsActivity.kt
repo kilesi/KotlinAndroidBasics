@@ -22,6 +22,7 @@ class UserDetailsActivity : AppCompatActivity() {
         tvUserName.text = name
         tvUserId.text = id
         tvUserSalary.text = salary
-        Toast.makeText(this, "Data received!!", Toast.LENGTH_LONG).show()
+        showToast("Data received!!")
+       // Toast.makeText(this, "Data received!!", Toast.LENGTH_LONG).show()
     }
 }

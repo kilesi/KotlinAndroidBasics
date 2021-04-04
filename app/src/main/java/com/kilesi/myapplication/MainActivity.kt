@@ -36,7 +36,9 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("Name", name)
         intent.putExtra("ID", id)
         intent.putExtra("Salary", salary)
-        Toast.makeText(this, "User data submitted successfully!", Toast.LENGTH_LONG).show()
+        val message = "User data submitted successfully!"
+        showToast(message)
+       // Toast.makeText(this, "User data submitted successfully!", Toast.LENGTH_LONG).show()
         startActivity(intent)
     }
 

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPractice">
-        <activity android:name=".HobbiesActivity"></activity>
+        <activity android:name=".HobbiesActivity" />
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

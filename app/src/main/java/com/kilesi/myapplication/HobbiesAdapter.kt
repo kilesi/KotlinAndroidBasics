@@ -33,16 +33,17 @@ class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) :
 
         init {
             itemView.setOnClickListener {
-                Toast.makeText(
-                    context,
-                    "You clicked " + currentHobby!!.title + "hobby",
-                    Toast.LENGTH_LONG
-                ).show()
+                context.showToast("You clicked " + currentHobby!!.title + "hobby")
+//                Toast.makeText(
+//                    context,
+//                    "You clicked " + currentHobby!!.title + "hobby",
+//                    Toast.LENGTH_LONG
+//                ).show()
             }
 
             // share hobby to other apps
             itemView.imgShare.setOnClickListener {
-                val myFavoriteHobby:String = "My hobby is: " + currentHobby!!.title
+                val myFavoriteHobby:String = "My hobby is " + currentHobby!!.title
                 val intent = Intent()
                 intent.action = Intent.ACTION_SEND
                 intent.putExtra(Intent.EXTRA_TEXT, myFavoriteHobby)
